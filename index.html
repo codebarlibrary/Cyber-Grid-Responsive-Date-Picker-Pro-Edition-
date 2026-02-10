@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Responsive Cyberpunk Date Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="date-picker">
+        <div class="date-input" id="dateTrigger">
+            <span id="displayText">Select Date</span>
+            <span style="color: var(--primary)">📅</span>
+        </div>
+
+        <div class="calendar-window" id="calendar">
+            <div class="view-header">
+                <button class="nav-btn" id="prevBtn">❮</button>
+                <div class="current-view-info" id="viewLabel">Month Year</div>
+                <button class="nav-btn" id="nextBtn">❯</button>
+            </div>
+
+            <div id="daysView" class="grid days-grid"></div>
+            <div id="monthsView" class="grid months-grid hidden"></div>
+            <div id="yearsView" class="grid years-grid hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
